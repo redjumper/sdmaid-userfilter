@@ -1,0 +1,22 @@
+{
+	"version": 4,
+	"label": "支付宝 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.eg.android.AlipayGphone_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"/com.eg.android.AlipayGphone/files/",
+		"/alipay/"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.eg.android.AlipayGphone/files/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?>.+)",
+		"^(?:.+?)(?>alipay/com.eg.android.AlipayGphone/nebulaDownload/downloads/)(?>.+)",
+		"^(?:.+?)(?>alipay/com.eg.android.AlipayGphone/openplatform/downloads/)(?>.+)",
+		"^(?:.+?)(?>alipay/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

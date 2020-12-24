@@ -1,0 +1,22 @@
+{
+	"version": 4,
+	"label": "通用 Bug 反馈 (公共存储)",
+	"description": "与 bug 报告相关的文件",
+	"identifier": "general_bug_reporting_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"pathContains": [
+		"logs/",
+		"log/",
+		"Log/",
+		"/Logs/",
+		"/applogic/",
+		"crash/",
+		"wtlogin/",
+		"/trafficLogic/",
+		"logcatic/"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

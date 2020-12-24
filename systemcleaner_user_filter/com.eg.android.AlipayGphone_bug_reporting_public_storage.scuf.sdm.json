@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "支付宝 Bug 反馈 (公共存储)",
+	"description": "与 bug 报告相关的文件",
+	"identifier": "com.eg.android.AlipayGphone_bug_reporting_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"pathContains": [
+		"com.eg.android.AlipayGphone/"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.eg.android.AlipayGphone/files/MobileAiX/log/)(?>.+)",
+		"^(?:.+?)(?>com.eg.android.AlipayGphone/healthRecord/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"version": 4,
+	"label": "苏宁易购 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.suning.mobile.ebuy_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.suning.mobile.ebuy/files/Pictures/cache/",
+		"/oneplayer/.local/"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

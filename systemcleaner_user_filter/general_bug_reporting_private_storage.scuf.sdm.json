@@ -1,0 +1,25 @@
+{
+	"version": 4,
+	"label": "通用 Bug 反馈 (私有存储)",
+	"description": "与 bug 报告相关的文件",
+	"identifier": "general_bug_reporting_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"pathContains": [
+		"Log/",
+		"/xlog/",
+		"/app_tombs/",
+		".mmap",
+		"/app_bugly/",
+		"/log/",
+		"/logs/",
+		"/app_log/",
+		"/applog/",
+		"/.log/",
+		"/app_logs/",
+		"/debug_log/",
+		"/Logs/"
+	],
+	"locations": [
+		"PRIVATE_DATA"
+	]
+}

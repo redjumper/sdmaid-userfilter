@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "QQ 缓存 (私有存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.tencent.mobileqq_caches_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.tencent.mobileqq/app_x5webview/Cache/",
+		"/data/data/com.tencent.mobileqq/app_x5webview/blob_storage/",
+		"/data/data/com.tencent.mobileqq/app_x5webview/databases/",
+		"/data/data/com.tencent.mobileqq/app_x5webview/IndexedDB/",
+		"/data/data/com.tencent.mobileqq/app_x5webview/Service Worker/CacheStorage/",
+		"/data/data/com.tencent.mobileqq/files/pddata/app/offline/",
+		"/data/data/com.tencent.mobileqq/files/WebOfflineRes/"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "QQ 聊天图片 (公共存储)",
+	"description": "超过 14 天的聊天图片",
+	"identifier": "com.tencent.mobileqq_chat_image_public_storage.scuf.sdm",
+	"color": "#FFFF5722",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"encent/MobileQQ/chatpic/"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

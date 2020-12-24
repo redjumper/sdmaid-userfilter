@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "FeedMe 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.seazon.feedme_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.seazon.feedme/files/providers/Feedly/cache/",
+		"com.seazon.feedme/files/providers/Feedly/states/"
+	],
+	"locations": [
+		"PUBLIC_DATA"
+	]
+}

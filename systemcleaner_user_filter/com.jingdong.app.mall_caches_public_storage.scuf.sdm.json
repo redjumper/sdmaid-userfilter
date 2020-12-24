@@ -1,0 +1,19 @@
+{
+	"version": 4,
+	"label": "京东 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.jingdong.app.mall_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.jingdong.app.mall/files/image/",
+		"/JDIM/cache/image/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

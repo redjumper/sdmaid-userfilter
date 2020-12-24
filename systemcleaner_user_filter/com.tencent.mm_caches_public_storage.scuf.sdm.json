@@ -1,0 +1,40 @@
+{
+	"version": 4,
+	"label": "微信 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.tencent.mm_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",	
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.tencent.mm/MicroMsg/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/attachment/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/bizimg/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/brandicon/)(?>.+)",		
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/favoffline/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/favorite/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/image/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/openim/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/recbiz/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/record/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/scanner/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/sns/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/.tmp/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/CDNTemp/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/FailMsgFileCache/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/share/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/videocache/appbrand[\\d]+)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/wallet/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/WebviewCache/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/wxacache/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/wxafiles/)(?>.+)",	
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/wxanewfiles/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA"
+	]
+}

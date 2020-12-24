@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "淘宝 缓存 (私有存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.taobao.taobao_caches_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.taobao.taobao/files/AVFSCache/"
+	],
+	"regexes": [
+		"^(?>/data/data/com\\.taobao\\.taobao/files/AVFSCache/([\\W\\w]+?)/files/v2\\.ols100\\.1/)([\\W\\w]+?)$"
+	]
+}

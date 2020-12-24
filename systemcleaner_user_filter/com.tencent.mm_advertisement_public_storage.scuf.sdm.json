@@ -1,0 +1,20 @@
+{
+	"version": 4,
+	"label": "微信 广告 (公共存储)",
+	"description": "超过 14 天的广告",
+	"identifier": "com.tencent.mm_advertisement_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.tencent.mm/MicroMsg/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/sns_ad_landingpages/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "TIM 聊天语音 (公共存储)",
+	"description": "超过 14 天的聊天语音",
+	"identifier": "com.tencent.tim_chat_voice_public_storage.scuf.sdm",
+	"color": "#FFFF5722",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"encent/Tim/"
+	],
+	"regexes": [
+		"(?i)^(?:.+?)(?>tencent/Tim/[\\d]+/ptt/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "QQ 聊天拍摄短视频 (公共存储)",
+	"description": "超过 14 天的聊天拍摄短视频",
+	"identifier": "com.tencent.mobileqq_chat_video_public_storage.scuf.sdm",
+	"color": "#FFFF5722",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"encent/MobileQQ/shortvideo/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

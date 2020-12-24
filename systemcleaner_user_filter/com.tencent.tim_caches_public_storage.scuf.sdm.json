@@ -1,0 +1,31 @@
+{
+	"version": 4,
+	"label": "TIM 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.tencent.tim_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.tencent.tim/",
+		"encent/mini/files/",
+		"encent/Tim/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.tencent.tim/files/.info/)(?>.+)",
+		"^(?:.+?)(?>com.tencent.tim/qzone/)(?>.+)",
+		"(?i)^(?:.+?)(?>Tencent/mini/files/)(?>.+)",
+		"(?i)^(?:.+?)(?>tencent/Tim/.emotionsm/)(?>.+)",
+		"(?i)^(?:.+?)(?>tencent/Tim/ArkApp/Cache/)(?>.+)",
+		"(?i)^(?:.+?)(?>tencent/Tim/photo/)(?>.+)",
+		"(?i)^(?:.+?)(?>tencent/Tim/thumb/)(?>.+)",
+		"(?i)^(?:.+?)(?>Tencent/Timfile_recv/\\.)(?>.+)",
+		"(?i)^(?:.+?)(?>Tencent/TMAssistantSDK/Download/com.tencent.tim/)(?>.+)"		
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

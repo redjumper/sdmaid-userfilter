@@ -1,0 +1,33 @@
+{
+	"exclusions": [
+		{
+			"contains_string": "/data/data/com.taobao.idlefish/files/DAI/Utlink/model",
+			"tags": [
+				"SYSTEMCLEANER"
+			],
+			"type": "SIMPLE_CONTAINS"
+		},
+		{
+			"contains_string": "/storage/emulated/0/Android/data/com.tencent.qqlive/files/.res64/56/",
+			"tags": [
+				"SYSTEMCLEANER"
+			],
+			"type": "SIMPLE_CONTAINS"
+		},
+		{
+			"contains_string": "/data/data/com.tencent.mobileqq/app_x5webview/IndexedDB/https_docs.qq.com_0.indexeddb.leveldb",
+			"tags": [
+				"SYSTEMCLEANER"
+			],
+			"type": "SIMPLE_CONTAINS"
+		},
+		{
+			"contains_string": "/data/data/com.tencent.mobileqq/app_x5webview/IndexedDB/https_qun.qq.com_0.indexeddb.leveldb",
+			"tags": [
+				"SYSTEMCLEANER"
+			],
+			"type": "SIMPLE_CONTAINS"
+		}
+	],
+	"version": 4
+}

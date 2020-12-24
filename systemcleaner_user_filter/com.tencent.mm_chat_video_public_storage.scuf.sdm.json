@@ -1,0 +1,17 @@
+{
+	"version": 4,
+	"label": "微信 聊天视频 (公共存储)",
+	"description": "超过 14 天的聊天视频",
+	"identifier": "com.tencent.mm_chat_video_public_storage.scuf.sdm",
+	"color": "#FFFF5722",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.tencent.mm/MicroMsg/"
+	],
+	"regexes": [
+		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/video/)(?>.+)"
+	],
+	"locations": [
+		"PUBLIC_DATA"
+	]
+}

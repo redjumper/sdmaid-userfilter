@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "过时的APK文件 (公共存储)",
+	"description": "公共存储中已下载的应用安装文件，已安装该应用的更新版本。",
+	"identifier": "obsolete.apk_public_storage.scuf.sdm",
+	"color": "#FFFFEB3B",
+	"targetType": "FILE",
+	"possibleNameEndings": [
+		".apk"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}
