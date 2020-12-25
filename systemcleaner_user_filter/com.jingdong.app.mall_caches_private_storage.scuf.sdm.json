@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "京东 缓存 (私有存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.jingdong.app.mall_caches_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.jingdong.app.mall/files/custom_theme_pics/",
+		"/data/data/com.jingdong.app.mall/files/jingdongbannerBgVideo/",
+		"/data/data/com.jingdong.app.mall/files/jingdonghomeSkuVideo/",
+		"/data/data/com.jingdong.app.mall/files/start_image/"
+	]
+}

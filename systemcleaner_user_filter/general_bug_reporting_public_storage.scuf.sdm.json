@@ -12,8 +12,10 @@
 		"/applogic/",
 		"crash/",
 		"wtlogin/",
+		".tlog",
 		"/trafficLogic/",
-		"logcatic/"
+		"logcatic/",
+		"Log.txt"
 	],
 	"locations": [
 		"PUBLIC_DATA",

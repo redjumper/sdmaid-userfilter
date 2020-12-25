@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "支付宝 缓存 (私有存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.eg.android.AlipayGphone_caches_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.eg.android.AlipayGphone/app_alipay_msp_disk_cache/",
+		"/data/data/com.eg.android.AlipayGphone/files/cashier_templates/",
+		"/data/data/com.eg.android.AlipayGphone/files/ccdn/caches/packages/",
+		"/data/data/com.eg.android.AlipayGphone/files/ccdn/caches/resources/"
+	]
+}
