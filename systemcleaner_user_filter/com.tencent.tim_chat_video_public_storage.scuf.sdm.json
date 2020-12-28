@@ -9,7 +9,7 @@
 		"encent/Tim/shortvideo/"
 	],
 	"exclusions": [
-		".nomedia"
+		"thumbs/.nomedia"
 	],
 	"locations": [
 		"PUBLIC_DATA",
