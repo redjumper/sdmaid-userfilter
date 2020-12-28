@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "知乎 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.zhihu.android_cache_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.zhihu.android/files/Movies/VideoCache/",
+		"com.zhihu.android/files/Pictures/"
+	],
+	"locations": [
+		"PUBLIC_DATA"
+	]
+}

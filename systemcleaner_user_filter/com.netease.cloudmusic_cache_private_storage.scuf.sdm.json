@@ -1,0 +1,14 @@
+{
+	"version": 4,
+	"label": "网易云音乐 缓存 (私有存储)",
+	"description": "超过 14 天的缓存"",
+	"identifier": "com.netease.cloudmusic_cache_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.netease.cloudmusic/files/NetworkCache/",
+		"/data/data/com.netease.cloudmusic/files/sailfish/",
+		"/data/data/com.netease.cloudmusic/files/sailfish/"
+	]
+}

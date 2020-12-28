@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "微信 聊天图片 (私有存储)",
+	"description": "超过 14 天的聊天图片",
+	"identifier": "com.tencent.mm_chat_image_private_storage.scuf.sdm",
+	"color": "#FFFF5722",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"/data/data/com.tencent.mm/MicroMsg/"
+	],
+	"exclusions": [
+		".nomedia"
+	],
+	"regexes": [
+		"^(?>/data/data/com.tencent.mm/MicroMsg/[0-9a-z]{32}/image2/)(?>.+)"
+	]
+}

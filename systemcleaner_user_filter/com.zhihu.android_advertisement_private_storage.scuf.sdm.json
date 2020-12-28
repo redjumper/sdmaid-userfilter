@@ -1,0 +1,16 @@
+{
+	"version": 4,
+	"label": "知乎 广告 (私有存储)",
+	"description": "超过 14 天的广告",
+	"identifier": "com.zhihu.android_advertisement_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"mainPath": [
+		"/data/data/com.zhihu.android/"
+	],
+	"regexes": [
+		"^(?>/data/data/com.zhihu.android/files/[A-Za-z0-9]+)/[A-Za-z0-9]+.mp4",
+		"^(?>/data/data/com.zhihu.android/files/IFlyAdImgCache/)(?>.+)"
+	]
+}
