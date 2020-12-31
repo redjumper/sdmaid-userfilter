@@ -4,7 +4,7 @@ echo "导出文件列表的时间可能会有点长，请耐心等待，中途�
 
 random=`uuidgen -r | cksum | cut -f 1 -d " "`
 
-if [ -f "/sbin/su" ];
+if [ -f "/sbin/su" ] || [ -f "/system//bin/su" ];
 then
 	find /data/data/ -print > /storage/emulated/0/private-$random.txt
 fi
