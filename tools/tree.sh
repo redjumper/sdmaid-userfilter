@@ -4,6 +4,7 @@ echo "导出文件列表的时间可能会有点长，请耐心等待，中途�
 
 start_time=`date +%s`
 random=`date +%s%N | md5sum | head -c 10`
+root=false
 
 # if rooted
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ];
