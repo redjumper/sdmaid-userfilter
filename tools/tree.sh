@@ -3,7 +3,7 @@
 echo "导出文件列表的时间可能会有点长，请耐心等待，中途不要停止脚本，导出完成会有提示"
 
 start_time=`date +%s`
-random=`uuidgen -r | cksum | cut -f 1 -d " "`
+random=`date +%s%N | md5sum | head -c 10`
 
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ];
 then
