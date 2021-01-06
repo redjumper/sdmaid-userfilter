@@ -9,14 +9,14 @@ random=`date +%s%N | md5sum | head -c 10`
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ];
 then
 	root=true
-	file_count=`find /data/user/0 -maxdepth 1 | wc -l`
+	file_count=`find /data/user -maxdepth 2 | wc -l`
 	if [ $file_count -lt 10 ];
 	then
 		find /data/data/ -print > /storage/emulated/0/private-$random.txt
 	else
 		find /data/user/ -print > /storage/emulated/0/private-$random.txt
 	fi
-	file_count=`find /data/media/0 -maxdepth 1 | wc -l`
+	file_count=`find /data/media -maxdepth 2 | wc -l`
 	if [ $file_count -lt 10 ];
 	then
 		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
