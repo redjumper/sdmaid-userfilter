@@ -17,26 +17,30 @@ done
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 	root=true
 	# list internal storage
-	if [ ! -d "/data/user" ]; then
-		find /data/data/ -print > /storage/emulated/0/private-$random.txt
-		sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
-	elif [ ! -d "/data/user/0" ] || [ `ls /data/user/0/ | wc -l` -lt 3 ]; then
-		find /data/data/ -print > /storage/emulated/0/private-$random.txt
-		find /data/user/ -print >> /storage/emulated/0/private-$random.txt
-		sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
+	if [ -d "/data/user" ]; then		
+		if [ -d "/data/user/0" ] && [ `ls /data/user/0/ | wc -l` -gt 2 ]; then
+			find -L /data/user/ -print > /storage/emulated/0/private-$random.txt
+		else
+			find /data/data/ -print > /storage/emulated/0/private-$random.txt
+			find /data/user/ -print >> /storage/emulated/0/private-$random.txt
+			sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
+		fi
 	else
-		find /data/user/ -print > /storage/emulated/0/private-$random.txt
+		find /data/data/ -print > /storage/emulated/0/private-$random.txt
+		sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
 	fi
 	# list external storage
-	if [ ! -d "/data/media" ]; then
-		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
-		sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
-	elif [ ! -d "/data/media/0" ] || [ `ls /data/media/0/ | wc -l` -lt 3 ]; then
-		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
-		find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print  > /storage/emulated/0/public-$random.txt
-		sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
+	if [ -d "/data/media" ]; then		
+		if [ -d "/data/media/0" ] && [ `ls /data/media/0/ | wc -l` -gt 2 ]; then
+			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
+		else
+			find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
+			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print >> /storage/emulated/0/public-$random.txt
+			sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
+		fi
 	else
-		find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print  > /storage/emulated/0/public-$random.txt
+		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
+		sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
 	fi
 fi
 
