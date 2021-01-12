@@ -13,41 +13,44 @@ do
         let n+=1
 done
 
+internal_file="/storage/emulated/0/private-$random-$(date +%Y%m%d).txt"
+external_file="/storage/emulated/0/public-$random-$(date +%Y%m%d).txt"
+
 # if rooted
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 	root=true
 	# list internal storage
 	if [ -d "/data/user" ]; then		
 		if [ -d "/data/user/0" ] && [ `ls /data/user/0/ | wc -l` -gt 2 ]; then
-			find -L /data/user/ -print > /storage/emulated/0/private-$random.txt 2>/dev/null | grep -v "No such file or directory"
+			find -L /data/user/ -print > $internal_file 2>/dev/null | grep -v "No such file or directory"
 		else
-			find /data/data/ -print > /storage/emulated/0/private-$random.txt
-			find /data/user/ -print >> /storage/emulated/0/private-$random.txt
-			sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
+			find /data/data/ -print > $internal_file
+			find /data/user/ -print >> $internal_file
+			sed -i 's/^\/data\/data/\/data\/user\/0/' $internal_file
 		fi
 	else
-		find /data/data/ -print > /storage/emulated/0/private-$random.txt
-		sed -i 's/^\/data\/data/\/data\/user\/0/' private-$random.txt
+		find /data/data/ -print > $internal_file
+		sed -i 's/^\/data\/data/\/data\/user\/0/' $internal_file
 	fi
 	# list external storage
 	if [ -d "/data/media" ]; then		
 		if [ -d "/data/media/0" ] && [ `ls /data/media/0/ | wc -l` -gt 2 ]; then
-			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
+			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print > $external_file
 		else
-			find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
-			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print >> /storage/emulated/0/public-$random.txt
-			sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
+			find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > $external_file
+			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print >> $external_file
+			sed -i 's/^\/storage\/emulated/\/data\/media/' $external_file
 		fi
 	else
-		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
-		sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
+		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > $external_file
+		sed -i 's/^\/storage\/emulated/\/data\/media/' $external_file
 	fi
 fi
 
 # if not rooted
 if [ "$root" = false ] && [ -d "/storage/emulated/0" ]; then
-	find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > /storage/emulated/0/public-$random.txt
-	sed -i 's/^\/storage\/emulated/\/data\/media/' public-$random.txt
+	find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > $external_file
+	sed -i 's/^\/storage\/emulated/\/data\/media/' $external_file
 fi
 	
 end_time=`date +%s`
