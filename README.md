@@ -14,7 +14,7 @@ SD Maid是安卓上最强大的清理类应用，但它默认的规则没有很�
 
 * 针对扫描机制优化。
 
-1、使用前请先阅读[wiki](https://github.com/redjumper/sdmaid-userfilter/wiki)和[issue 1](https://github.com/redjumper/sdmaid-userfilter/issues/1)。
+1、 **使用前请先阅读[wiki](https://github.com/redjumper/sdmaid-userfilter/wiki)和[issue 1](https://github.com/redjumper/sdmaid-userfilter/issues/1)。**
 
 2、为尊重作者的知识产权，不会采用再编译SD Maid，集成应用清理规则的方式。
 
