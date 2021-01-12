@@ -19,7 +19,7 @@ if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 	# list internal storage
 	if [ -d "/data/user" ]; then		
 		if [ -d "/data/user/0" ] && [ `ls /data/user/0/ | wc -l` -gt 2 ]; then
-			find -L /data/user/ -print > /storage/emulated/0/private-$random.txt
+			find -L /data/user/ -print > /storage/emulated/0/private-$random.txt 2>/dev/null | grep -v "No such file or directory"
 		else
 			find /data/data/ -print > /storage/emulated/0/private-$random.txt
 			find /data/user/ -print >> /storage/emulated/0/private-$random.txt
