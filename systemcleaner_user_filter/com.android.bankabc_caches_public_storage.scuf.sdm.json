@@ -1,0 +1,17 @@
+{
+	"version": 4,
+	"label": "中国农业银行 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.android.bankabc_caches_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"com.android.bankabc/files/image/",
+		"/com.android.bankabc/files/nebulaDownload/downloads/",
+		"/com.android.bankabc/image/"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

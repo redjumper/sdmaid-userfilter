@@ -1,0 +1,20 @@
+{
+	"version": 4,
+	"label": "网易云音乐 缓存 (公共存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.netease.cloudmusic_cache_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"/netease/cloudmusic/"
+	],
+	"regexes": [
+		"^(?:.+?)(?>/netease/cloudmusic/Cache/(?!ImageCache)\\w+\/)([\\W\\w]+?)$",
+		"^(?:.+?)(?>/netease/cloudmusic/Cache/ImageCache/v2\\.ols100\\.1/)([\\W\\w]+?)$"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}

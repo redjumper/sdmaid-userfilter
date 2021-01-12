@@ -1,0 +1,15 @@
+{
+	"version": 4,
+	"label": "网易云音乐 Bug 反馈 (公共存储)",
+	"description": "与 bug 报告相关的文件",
+	"identifier": "com.netease.cloudmusic_bug_reporting_public_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"pathContains": [
+		"/netease/cloudmusic/Stacktrace/"
+	],
+	"locations": [
+		"PUBLIC_DATA",
+		"SDCARD"
+	]
+}
