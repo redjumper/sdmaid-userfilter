@@ -6,7 +6,7 @@
 	"color": "#FF4CAF50",
 	"minimumAge": 1209600000,
 	"pathContains": [
-		"com.android.bankabc/files/image/",
+		"/com.android.bankabc/files/image/",
 		"/com.android.bankabc/files/nebulaDownload/downloads/",
 		"/com.android.bankabc/image/"
 	],

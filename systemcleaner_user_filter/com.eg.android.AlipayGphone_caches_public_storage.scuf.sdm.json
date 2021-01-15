@@ -10,10 +10,10 @@
 		"/alipay/"
 	],
 	"regexes": [
-		"^(?:.+?)(?>com.eg.android.AlipayGphone/files/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?>.+)",
-		"^(?:.+?)(?>alipay/com.eg.android.AlipayGphone/nebulaDownload/downloads/)(?>.+)",
-		"^(?:.+?)(?>alipay/com.eg.android.AlipayGphone/openplatform/downloads/)(?>.+)",
-		"^(?:.+?)(?>alipay/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?>.+)"
+		"^(?:.+?)(?>com\\.eg\\.android\\.AlipayGphone/files/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?:.+)$",
+		"^(?:.+?)(?>alipay/com\\.eg\\.android\\.AlipayGphone/nebulaDownload/downloads/)(?:.+)$",
+		"^(?:.+?)(?>alipay/com\\.eg\\.android\\.AlipayGphone/openplatform/downloads/)(?:.+)$",
+		"^(?:.+?)(?>alipay/multimedia/[0-9a-z]{32}/[0-9a-z]{2}/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA",

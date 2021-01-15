@@ -10,7 +10,7 @@
 		"/data/data/com.zhihu.android/"
 	],
 	"regexes": [
-		"^(?>/data/data/com.zhihu.android/files/[A-Za-z0-9]+)/[A-Za-z0-9]+.mp4",
-		"^(?>/data/data/com.zhihu.android/files/IFlyAdImgCache/)(?>.+)"
+		"^(?>/data/data/com\\.zhihu\\.android/files/[A-Za-z0-9]+)/[A-Za-z0-9]+.mp4$",
+		"^(?>/data/data/com\\.zhihu\\.android/files/IFlyAdImgCache/)(?:.+)$"
 	]
 }

@@ -4,6 +4,8 @@
 	"description": "与 bug 报告相关的文件",
 	"identifier": "general_bug_reporting_private_storage.scuf.sdm",
 	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
 	"pathContains": [
 		"Log/",
 		"/xlog/",

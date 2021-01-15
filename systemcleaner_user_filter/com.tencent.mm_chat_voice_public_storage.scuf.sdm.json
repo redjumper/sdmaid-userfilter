@@ -12,7 +12,7 @@
 		".nomedia"
 	],
 	"regexes": [
-		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/voice2/)(?>.+)"
+		"^(?:.+?)(?>com\\.tencent\\.mm/MicroMsg/[0-9a-z]{32}/voice2/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA"

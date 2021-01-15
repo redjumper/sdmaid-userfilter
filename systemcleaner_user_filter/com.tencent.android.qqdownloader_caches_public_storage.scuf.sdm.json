@@ -12,11 +12,11 @@
 		".nomedia"
 	],
 	"regexes": [
-		"^(?:.+?)(?>com.tencent.android.qqdownloader/files/tassistant/apk/[\\w\\.]+\\.apk)(?>.+)",
-		"^(?:.+?)(?>com.tencent.android.qqdownloader/files/tassistant/gif/)(?>.+)",
-		"^(?:.+?)(?>com.tencent.android.qqdownloader/files/tassistant/mediaCache/)(?>.+)",		
-		"^(?:.+?)(?>com.tencent.android.qqdownloader/files/tassistant/pic/)(?>.+)",
-		"^(?:.+?)(?>com.tencent.android.qqdownloader/files/tassistant/video/)(?>.+)"
+		"^(?:.+?)(?>com\\.tencent\\.android\\.qqdownloader/files/tassistant/apk/)[\\w\\.]+\\.apk(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.android\\.qqdownloader/files/tassistant/gif/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.android\\.qqdownloader/files/tassistant/mediaCache/)(?:.+)$",		
+		"^(?:.+?)(?>com\\.tencent\\.android\\.qqdownloader/files/tassistant/pic/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.android\\.qqdownloader/files/tassistant/video/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA"

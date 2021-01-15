@@ -13,6 +13,6 @@
 		".nomedia"
 	],
 	"regexes": [
-		"^(?>/data/data/com.tencent.mm/MicroMsg/[0-9a-z]{32}/image2/)(?>.+)"
+		"^(?>/data/data/com\\.tencent\\.mm/MicroMsg/[0-9a-z]{32}/image2/)(?:.+)$"
 	]
 }

@@ -9,7 +9,7 @@
 		"com.tencent.mm/MicroMsg/"
 	],
 	"regexes": [
-		"^(?:.+?)(?>com.tencent.mm/MicroMsg/[0-9a-z]{32}/video/)(?>.+)"
+		"^(?:.+?)(?>com\\.tencent\\.mm/MicroMsg/[0-9a-z]{32}/video/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA"

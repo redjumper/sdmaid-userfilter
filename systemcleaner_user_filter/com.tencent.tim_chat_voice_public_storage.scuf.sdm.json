@@ -9,7 +9,7 @@
 		"encent/Tim/"
 	],
 	"regexes": [
-		"(?i)^(?:.+?)(?>tencent/Tim/[\\d]+/ptt/)(?>.+)"
+		"^(?:.+?)(?>T|tencent/Tim/[\\d]+/ptt/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA",

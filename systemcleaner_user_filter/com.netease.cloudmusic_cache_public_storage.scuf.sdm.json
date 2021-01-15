@@ -10,8 +10,8 @@
 		"/netease/cloudmusic/"
 	],
 	"regexes": [
-		"^(?:.+?)(?>/netease/cloudmusic/Cache/(?!ImageCache)\\w+\/)([\\W\\w]+?)$",
-		"^(?:.+?)(?>/netease/cloudmusic/Cache/ImageCache/v2\\.ols100\\.1/)([\\W\\w]+?)$"
+		"^(?:.+?)(?>/netease/cloudmusic/Cache/(?!ImageCache)\\w+\/)(?:.+)$",
+		"^(?:.+?)(?>/netease/cloudmusic/Cache/ImageCache/v2\\.ols100\\.1/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA",

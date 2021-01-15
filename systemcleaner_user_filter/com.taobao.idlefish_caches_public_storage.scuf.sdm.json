@@ -9,7 +9,7 @@
 		"com.taobao.idlefish/files/AVFSCache/"
 	],
 	"regexes": [
-		"^(?:.+?)(?>/com\\.taobao\\.idlefish/files/AVFSCache/([\\W\\w]+?)/files/v2\\.ols100\\.1/)([\\W\\w]+?)$"
+		"^(?:.+?)(?>/com\\.taobao\\.idlefish/files/AVFSCache/.+?/files/v2\\.ols100\\.1/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA"

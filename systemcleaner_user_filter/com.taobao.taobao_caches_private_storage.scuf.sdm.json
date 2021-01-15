@@ -10,7 +10,7 @@
 		"/data/data/com.taobao.taobao/"
 	],
 	"regexes": [
-		"^(?>/data/data/com\\.taobao\\.taobao/app_zcache/apps/([a-z]+)_taobao_([0-9]+)/)([\\W\\w]+?)$",
-		"^(?>/data/data/com\\.taobao\\.taobao/files/AVFSCache/([\\W\\w]+?)/files/v2\\.ols100\\.1/)([\\W\\w]+?)$"
+		"^(?>/data/data/com\\.taobao\\.taobao/app_zcache/apps/[a-z]+_taobao_[0-9]+/)(?:.+)$",
+		"^(?>/data/data/com\\.taobao\\.taobao/files/AVFSCache/.+?/files/v2\\.ols100\\.1/)(?:.+)$"
 	]
 }

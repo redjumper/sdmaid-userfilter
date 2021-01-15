@@ -9,7 +9,7 @@
 		"encent/MobileQQ/"
 	],
 	"regexes": [
-		"(?i)^(?:.+?)(?>tencent/MobileQQ/[\\d]+/ptt/)(?>.+)"
+		"^(?:.+?)(?>T|tencent/MobileQQ/[\\d]+/ptt/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA",
