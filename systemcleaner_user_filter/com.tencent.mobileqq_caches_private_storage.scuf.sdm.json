@@ -7,12 +7,7 @@
 	"rootOnly": true,
 	"minimumAge": 1209600000,
 	"mainPath": [
-		"/data/data/com.tencent.mobileqq/app_x5webview/Cache/",
-		"/data/data/com.tencent.mobileqq/app_x5webview/blob_storage/",
-		"/data/data/com.tencent.mobileqq/app_x5webview/databases/",
-		"/data/data/com.tencent.mobileqq/app_x5webview/IndexedDB/",
-		"/data/data/com.tencent.mobileqq/app_x5webview/Service Worker/CacheStorage/",
 		"/data/data/com.tencent.mobileqq/files/pddata/app/offline/",
-		"/data/data/com.tencent.mobileqq/files/WebOfflineRes/"
+		"/data/data/com.tencent.mobileqq/files/WebOfflineRes/"		
 	]
 }

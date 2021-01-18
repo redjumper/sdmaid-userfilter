@@ -28,7 +28,7 @@
 		"^(?:.+?)(?>T|tencent/MobileQQ/thumb/)(?:.+)$",
 		"^(?:.+?)(?>T|tencent/MobileQQ/webso/offline/)(?:.+)$",
 		"^(?:.+?)(?>T|tencent/QQfile_recv/\\.)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/TMAssistantSDK/Download/com\\.tencent\\.mobileqq/)(?:.+)$"		
+		"^(?:.+?)(?>T|tencent/TMAssistantSDK/Download/com\\.tencent\\.mobileqq/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA",

@@ -1,0 +1,18 @@
+{
+	"version": 4,
+	"label": "微信 缓存 (私有存储)",
+	"description": "超过 14 天的缓存",
+	"identifier": "com.tencent.mm_caches_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"/data/data/com.tencent.mm/MicroMsg/"
+	],
+	"regexes": [
+		"^(?>/data/data/com\\.tencent\\.mm/MicroMsg/[0-9a-z]{32}/cdn/download/)(?:.+)$",
+		"^(?>/data/data/com\\.tencent\\.mm/MicroMsg/emoji/cover/)(?:.+)$",
+		"^(?>/data/data/com\\.tencent\\.mm/MicroMsg/mmslot/webcached/\\d+/\\d+/)(?:.+)$",
+		"^(?>/data/data/com\\.tencent\\.mm/MicroMsg/tmp/)(?:.+)$"
+	]
+}

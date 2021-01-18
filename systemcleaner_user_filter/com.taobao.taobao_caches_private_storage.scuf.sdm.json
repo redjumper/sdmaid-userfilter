@@ -6,7 +6,7 @@
 	"color": "#FF4CAF50",
 	"rootOnly": true,
 	"minimumAge": 1209600000,
-	"mainPath": [
+	"pathContains": [
 		"/data/data/com.taobao.taobao/"
 	],
 	"regexes": [

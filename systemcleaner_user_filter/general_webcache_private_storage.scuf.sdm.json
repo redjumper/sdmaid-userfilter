@@ -1,0 +1,20 @@
+{
+	"version": 4,
+	"label": "WebView 缓存 (私有存储)",
+	"description": "应用内置浏览器的缓存",
+	"identifier": "general_webcache_private_storage.scuf.sdm",
+	"color": "#FF4CAF50",
+	"rootOnly": true,
+	"minimumAge": 1209600000,
+	"pathContains": [
+		"webview",
+		"app_xwalk"
+	],
+	"regexes": [
+		"^(?:.+?)(?>webview.*?\/(?:GPU|Script)?Cache(?:Storage)?\/)(?:.+)$",
+		"^(?:.+?)(?>app_xwalk.*?\/(?:GPU|Script)?Cache(?:Storage)?\/)(?:.+)$"
+	],
+	"locations": [
+		"PRIVATE_DATA"
+	]
+}

@@ -6,13 +6,11 @@
 	"color": "#FF4CAF50",
 	"minimumAge": 1209600000,
 	"pathContains": [
-		"com.tencent.mm/MicroMsg/"
+		"/com.tencent.mm/MicroMsg/hbstoryvideo/",
+		"/com.tencent.mm/MicroMsg/sns_ad_landingpages/"
 	],
 	"exclusions": [
 		".nomedia"
-	],
-	"regexes": [
-		"^(?:.+?)(?>com\\.tencent\\.mm/MicroMsg/sns_ad_landingpages/)(?:.+)$"
 	],
 	"locations": [
 		"PUBLIC_DATA"
