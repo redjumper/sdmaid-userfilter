@@ -6,32 +6,34 @@
 	"color": "#FF4CAF50",
 	"minimumAge": 1209600000,
 	"pathContains": [
-		"com.tencent.mobileqq/",
-		"encent/mini/files/",
-		"encent/MobileQQ/"
+		"com.tencent.mobileqq/"
 	],
 	"exclusions": [
 		".nomedia"
 	],
 	"regexes": [
 		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/\\.info/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/ae/camera/capture/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/opensdk_tmp/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/QWallet/\\.tmp/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/tbs/TbsReaderTemp/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/tencent/MobileQQ/\\.pendant/)(?:.+)$",
 		"^(?:.+?)(?>com\\.tencent\\.mobileqq/files/uploader/)(?:.+)$",
 		"^(?:.+?)(?>com\\.tencent\\.mobileqq/qzone/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/mini/files/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/\\.emotionsm/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/\\.gift/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/ArkApp/Cache/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/diskcache/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/pddata/app/offline/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/photo/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/Scribble/ScribbleCache/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/thumb/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/MobileQQ/webso/offline/)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/QQfile_recv/\\.)(?:.+)$",
-		"^(?:.+?)(?>T|tencent/TMAssistantSDK/Download/com\\.tencent\\.mobileqq/)(?:.+)$"
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/mini/files/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/\\.emotionsm/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/\\.gift/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/pddata/app/offline/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/photo/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/Scribble/ScribbleCache/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/shortvideo/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/tencent/MobileQQ/webso/offline/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/MobileQQ/thumb/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/QQfile_recv/\\.)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/Qzone/.AppCenterImgCache/)(?:.+)$",
+		"^(?:.+?)(?>com\\.tencent\\.mobileqq/Tencent/TMAssistantSDK/Download/com.tencent.mobileqq/)(?:.+)$"
 	],
 	"locations": [
-		"PUBLIC_DATA",
-		"SDCARD"
+		"PUBLIC_DATA"
 	]
 }

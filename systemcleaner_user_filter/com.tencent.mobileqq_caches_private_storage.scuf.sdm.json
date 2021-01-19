@@ -6,8 +6,17 @@
 	"color": "#FF4CAF50",
 	"rootOnly": true,
 	"minimumAge": 1209600000,
-	"mainPath": [
+	"pathContains": [
+		"/data/data/com.tencent.mobileqq/files/.info/",
+		"/data/data/com.tencent.mobileqq/files/ArkApp/Cache/",
+		"/data/data/com.tencent.mobileqq/files/ArkApp_qzone/Cache/",
+		"/data/data/com.tencent.mobileqq/files/ArkApp_tool/Cache/",
+		"/data/data/com.tencent.mobileqq/files/far/",
+		"/data/data/com.tencent.mobileqq/files/fdmon/",
+		"/data/data/com.tencent.mobileqq/files/gvideo/",
 		"/data/data/com.tencent.mobileqq/files/pddata/app/offline/",
+		"/data/data/com.tencent.mobileqq/files/ShadowPlugin_ilive-pluginapngCache/",
+		"/data/data/com.tencent.mobileqq/files/tempFile",
 		"/data/data/com.tencent.mobileqq/files/WebOfflineRes/"		
 	]
 }
