@@ -15,12 +15,13 @@ done
 
 internal_file="/storage/emulated/0/private-$random-$(date +%Y%m%d).txt"
 external_file="/storage/emulated/0/public-$random-$(date +%Y%m%d).txt"
+temp_file="/storage/emulated/0/temp.txt"
 
 # if rooted
 if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 	root=true
 	# list internal storage
-	if [ -d "/data/user" ]; then		
+	if [ -d "/data/user" ]; then
 		if [ -d "/data/user/0" ] && [ `ls /data/user/0/ | wc -l` -gt 2 ]; then
 			find -L /data/user/ -print > $internal_file 2>/dev/null | grep -v "No such file or directory"
 		else
@@ -32,8 +33,12 @@ if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 		find /data/data/ -print > $internal_file
 		sed -i 's/^\/data\/data/\/data\/user\/0/' $internal_file
 	fi
+	if [ -f $internal_file ]; then
+		grep -v "^/data/user/[0-9]\{1,\}/[^/]\{1,\}/cache/" $internal_file > $temp_file
+		mv $temp_file $internal_file
+	fi
 	# list external storage
-	if [ -d "/data/media" ]; then		
+	if [ -d "/data/media" ]; then
 		if [ -d "/data/media/0" ] && [ `ls /data/media/0/ | wc -l` -gt 2 ]; then
 			find /data/media/ -type d \( -name DCIM -o -name Documents -o -name Download -o -name Movies -o -name Music -o -name Pictures \) -prune -o -print > $external_file
 		else
@@ -44,6 +49,10 @@ if [ -f "/sbin/su" ] || [ -f "/system/bin/su" ]; then
 	else
 		find /storage/emulated/0/ \( -path /storage/emulated/0/DCIM -o -path /storage/emulated/0/Documents -o -path /storage/emulated/0/Download -o -path /storage/emulated/0/Movies -o -path /storage/emulated/0/Music -o -path /storage/emulated/0/Pictures \) -prune -o -print > $external_file
 		sed -i 's/^\/storage\/emulated/\/data\/media/' $external_file
+	fi
+	if [ -f $external_file ]; then
+		grep -v "^/data/emulated/[0-9]\{1,\}/Android/data/[^/]\{1,\}/cache/" $external_file > $temp_file
+		mv $temp_file $external_file
 	fi
 fi
 
